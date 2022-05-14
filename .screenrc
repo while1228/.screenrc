@@ -12,7 +12,8 @@ defscrollback 409600
 hardstatus alwayslastline
 shelltitle "$|bash"
 
-hardstatus string '%{= kG}[ %Y/%m/%d %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F8)Screen (F9)Title (F10)Detach (F11)Prev (F12)Next %{kg}]'
+#hardstatus string '%{= kG}[ %Y/%m/%d %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F8)Screen (F9)Title (F10)Detach (F11)Prev (F12)Next %{kg}]'
+hardstatus string '%{= kg}[%{b} %Y/%m/%d %c:%s %{g}][ %{.kw}%-w%{.mw}%u%n*%t%{-}%+w %=%{..G} %{g}][ %{C}(F8)%{g}Screen (F9)%{g}Title %{w}(F10)%{g}Detach %{w}(F11)%{g}Prev %{w}(F12)%{g}Next %{kw} %{g}]'
 #hardstatus string '%{= kG}[ %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{Y}%n*%f%t %{K}%?%+Lw%?%= %{kG}][ %{C}(F8)Screen (F9)Title (F10)Detach (F11)Prev (F12)Next %{kg}][%{kG} %l %Y/%m/%d %{kG}]'
 
 # a short version, can use C-a
@@ -26,11 +27,11 @@ vbell off
 bind w windowlist -b
 bind ^w windowlist -b
 ###initial apps to run
-screen -t compile 0
-screen -t build   1
-screen -t package 2
-screen -t tmp     3
-screen -t test    4
+#screen -t compile 0
+#screen -t build   1
+#screen -t package 2
+#screen -t tmp     3
+#screen -t test    4
 select 0
 #
 #進行快捷鍵的綁定
